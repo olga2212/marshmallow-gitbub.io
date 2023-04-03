@@ -1,0 +1,235 @@
+body{
+  margin: 0;
+  background-image: url(https://media.istockphoto.com/photos/sugar-sprinkle-dots-on-white-background-sweet-decoration-for-cakes-picture-id1036645034?k=20&m=1036645034&s=612x612&w=0&h=dfvDAIM7RaU2deAHOnnKlwvDo5Wgxs8ruvuWFFoNRKg=);
+  background-size: 60%;
+  }
+  .navbar {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  min-width: 300px;
+  }
+  .logo-gradient{
+  background: rgb(73,243,15);
+  background: linear-gradient(231deg, rgba(73,243,15,1) 15%, rgba(242,239,20,0.9839286056219363) 59%, rgba(255,73,33,1) 83%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  }
+  .logo-menu {
+  color: antiquewhite;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 40px;
+  fo nt-family: 'Pacifico', cursive;
+  }
+  .logo-menu:hover {
+  color: antiquewhite;
+  }
+  .menu-style {
+  border: none;
+  color: #4700D8!important;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  font-family: 'Pacifico', cursive;
+  }
+  .menu-style{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  .menu-style:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+  }
+  .menu-style:hover{
+  padding-right: 35px;
+  padding-left:8px;
+  }
+  .menu-style:hover:after {
+  opacity: 1;
+  right: 10px;
+  }
+  img{
+  width: 100%;
+  height: 80%;
+  }
+  .group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+  }
+  .flip-card {
+  width: 350px;
+  height: 450px;
+  background-color: #0ddeed;
+  border: 2px solid rgb(126, 6, 78);
+  border-radius: 20px;
+  padding: 25px 0;
+  margin: 0 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  }
+  .flip-card-back {
+  background-color: #f90ee1;
+  transform: rotateY(180deg);
+  height: 90%;
+  margin-top: 30px;
+  }
+  h3{
+  color: #7a035f;
+  }
+  p{
+  margin: 20px;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  }
+  hr{
+  color: #f90ee1;
+  }
+  .price{
+  font-size: 40px;
+  color: #29027e;
+  }
+  ins{
+  display: inline-block;
+  transform: rotate(-20deg);
+  text-decoration: none;
+  color: #6c0202;
+  }
+  .button-back{
+  background-color: inherit;
+  border: none;
+  margin-right: 50px;
+  }
+  .back{
+  color:#4700D8!important;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  }
+  .button-back span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  .button-back span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  .button-back:hover span {
+  padding-right: 25px;
+  }
+  .button-back:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+  .bottom-picture{
+  margin-top: 50px;
+  }
+  .button-4 {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  background-color:#07ff0b ;
+  border: 3px solid #51ae4f;
+  color: #820080;
+  transition: .3s;
+  font-size: 25px;
+  font-weight: bolder;
+  }
+  .button-4:hover {
+  animation: pulse 1s infinite;
+  transition: .3s;
+  }
+  @keyframes pulse {
+  0% {
+  transform: scale(1);
+  }
+  70% {
+  transform: scale(.9);
+  }
+  100% {
+  transform: scale(1);
+  background-color: #d2ff07;
+  }
+  }
+  @media all and (max-width: 920px){
+  .group{
+  margin-top: 50px;
+  }
+  p{
+  font-size: 25px;
+  margin: 0px;
+  }
+  .price{
+  margin-top: 0px;
+  }
+  .button-4{
+  margin: 0px;
+  }
+  }
+  @media all and (max-width: 415px){
+  .menu-style{
+  margin-top: 0%;
+  margin-left: 150px;
+  } 
+  .bottom-picture{
+    height: 100px;
+  }
+  }
+  @media all and (max-width: 380px){
+  .menu-style{
+  margin-top: 0%;
+  margin-left: 150px;
+  } 
+  p{
+  font-size: 20px;
+  }
+  .bottom-picture{
+    height: 100px;
+  }
+}
+  @media all and (max-width: 280px){
+  .menu-style{
+  margin-left: 100px;
+  }
+  }

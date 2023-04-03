@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    background-image: url(https://media.istockphoto.com/photos/sugar-sprinkle-dots-on-white-background-sweet-decoration-for-cakes-picture-id1036645034?k=20&m=1036645034&s=612x612&w=0&h=dfvDAIM7RaU2deAHOnnKlwvDo5Wgxs8ruvuWFFoNRKg=);
+    background-size: 60%;
+    }
+    .navbar {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    min-width: 300px;
+    }
+    .logo-gradient{
+    background: rgb(73,243,15);
+    background: linear-gradient(231deg, rgba(73,243,15,1) 15%, rgba(242,239,20,0.9839286056219363) 59%, rgba(255,73,33,1) 83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    }
+    .logo-menu {
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    }
+    .logo-menu:hover {
+    color: antiquewhite;
+    }
+    .menu-style {
+    border: none;
+    color: #4700D8!important;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    font-family: 'Pacifico', cursive;
+    }
+    .menu-style{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    .menu-style:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+    }
+    .menu-style:hover{
+    padding-right: 35px;
+    padding-left:8px;
+    }
+    .menu-style:hover:after {
+    opacity: 1;
+    right: 10px;
+    }
+    .group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .card, .card-2, .card-3, .card-4, .card-5, .card-6 {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: rgb(244, 10, 201);
+    margin-top: 100px;
+    }
+
+    .card .image,
+    .card-2 .image,
+    .card-3 .image,
+    .card-4 .image,
+    .card-5 .image,
+    .card-6 .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+    .card .image img,
+    .card-2 .image img,
+    .card-3 .image img,
+    .card-4 .image img,
+    .card-5 .image img,
+    .card-6 .image img {
+    width: 100%;
+    transition: .5s;
+    }
+    .card:hover .image img,
+    .card-2:hover .image img,
+    .card-3:hover .image img,
+    .card-4:hover .image img,
+    .card-5:hover .image img,
+    .card-6:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+    }
+    .card .details,
+    .card-2 .details,
+    .card-3 .details,
+    .card-4 .details,
+    .card-5 .details,
+    .card-6 .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #B983FF;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+    }
+    .card:hover .details,
+    .card-2:hover .details,
+    .card-3:hover .details,
+    .card-4:hover .details,
+    .card-5:hover .details,
+    .card-6:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+    }
+    .card .details .center,
+    .card-2 .details .center,
+    .card-3 .details .center,
+    .card-4 .details .center,
+    .card-5 .details .center,
+    .card-6 .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #94DAFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+    .card .details .center h1,
+    .card-2 .details .center h1,
+    .card-3 .details .center h1,
+    .card-4 .details .center h1,
+    .card-5 .details .center h1,
+    .card-6 .details .center h1{
+    margin: 0;
+    padding: 0;
+    color: #FF0075;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    }
+    .card .details .center h1 span,
+    .card-2 .details .center h1 span,
+    .card-3 .details .center h1 span,
+    .card-4 .details .center h1 span,
+    .card-5 .details .center h1 span,
+    .card-6 .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+    }
+    .card .details .center p,
+    .card-2 .details .center p,
+    .card-3 .details .center p
+    .card-4 .details .center p,
+    .card-5 .details .center p,
+    .card-6 .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+    }
+    .btn{
+    display:inline-block;  
+    text-decoration: none;
+    color: #510444;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border: solid  1px #874356;
+    border-radius: 20px;
+    background-color: inherit;
+    font-family: 'Source Sans Pro', sans-serif;  
+    background-image: linear-gradient(45deg,#6cd5ea, #0408fd, #fe07eeee, #f4b9f2, #a9f20c, #07c903,#06a328);   
+    background-size: 200%; 
+    animation: animatebg 2s ease infinite paused;
+    }
+    .btn:hover{
+    animation-play-state: running;
+    }
+    @keyframes animatebg {
+    0% {
+    background-position: 0%;
+    }
+    50% {
+    background-position: 100%;
+    }
+    100% {
+    background-position: 0%;
+    }
+    }
+    p{ 
+    font-family: 'Pacifico', cursive;
+    }
+    .price-set{
+    font-size: 30px;
+    color: #29027e!important;
+    }
+    ins{
+    display: inline-block;
+    transform: rotate(-20deg);
+    text-decoration: none;
+    color: #ff0909;
+    }
+    .button{
+    background-color: inherit;
+    border: none;
+    margin-right: 50px;
+    }
+    .back{
+    color:#4700D8!important;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    }
+    .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+    .button:hover span {
+    padding-right: 25px;
+    }
+    .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+    .bottom-picture{
+    margin-top: 100px;
+    width: 100%;
+    }
+
+    @media all and (max-width: 460px){
+    .menu-style{
+    margin-top: 0%;
+    margin-left: 150px;
+    } 
+    }
+    @media all and (max-width: 370px){
+        h1{
+            font-size: 12px;
+        }
+        p{
+            font-size: 10px;
+        }
+        .price-set{
+            font-size: 15px;
+        }
+        .card, .card-2, .card-3, .card-4, .card-5, .card-6 {
+            position: relative;
+            width: 350px;
+            height: 350px;
+    }
+}
+
+    @media all and (max-width: 280px){
+    .menu-style{
+    margin-left: 100px;
+    }
+}
